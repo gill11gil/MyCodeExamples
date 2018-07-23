@@ -1,7 +1,7 @@
 ﻿using System;
 /// <summary>
-/// This namespace contains my implementation of several data structures.
-/// This work was done as a preperation for work interviews.
+/// This name space contains my implementation of several data structures.
+/// This work was done as a preparation for work interviews.
 /// </summary>
 namespace MyDataStructures
 {

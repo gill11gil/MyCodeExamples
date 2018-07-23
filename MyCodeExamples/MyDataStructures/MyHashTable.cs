@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 /// <summary>
-/// This namespace contains my implementation of several data structures.
-/// This work was done as a preperation for work interviews.
+/// This name space contains my implementation of several data structures.
+/// This work was done as a preparation for work interviews.
 /// </summary>
 namespace MyDataStructures
 {
@@ -19,7 +19,7 @@ namespace MyDataStructures
 
         #region Constructor
         /// <summary>
-        /// Deafult constructor with table size eqaul to 2039.
+        /// Default constructor with table size equal to 2039.
         /// </summary>
         public MyHashTable()
         {
@@ -29,7 +29,7 @@ namespace MyDataStructures
         #endregion
 
         #region Private methods
-        // Initialize an array of lists with the suze given in the constructor or the default size.
+        // Initialize an array of lists with the size given in the constructor or the default size.
         // The array will have null as the default values, until items are added to the table.
         // On each item added we will create a list if not exists in the correct place int the array.
         private void init()
@@ -79,7 +79,7 @@ namespace MyDataStructures
             _table[key].Add(item);
         }
         /// <summary>
-        /// Deletes the first occurence of the number in the table.
+        /// Deletes the first occurrence of the number in the table.
         /// </summary>
         /// <param name="number">Number to delete from the table.</param>
         public void Delete(T item)

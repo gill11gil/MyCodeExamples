@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{207ACA8E-4469-4EC0-9651-C997C2432CED}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{447F9413-C4EC-4FB9-8714-ACA587B4F4D0}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyCodeExamples</RootNamespace>
-    <AssemblyName>MyCodeExamples</AssemblyName>
+    <RootNamespace>MyDesignPatterns</RootNamespace>
+    <AssemblyName>MyDesignPatterns</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,22 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="MyFactoryExample\Box.cs" />
+    <Compile Include="MyFactoryExample\BoxFactory.cs" />
+    <Compile Include="MyFactoryExample\IFactory.cs" />
+    <Compile Include="MyFactoryExample\ItemCanotBeFactorized.cs" />
+    <Compile Include="MyFactoryExample\LargeBox.cs" />
+    <Compile Include="MyFactoryExample\MediumBox.cs" />
+    <Compile Include="MyFactoryExample\ProductTypes.cs" />
+    <Compile Include="MyFactoryExample\SmallBox.cs" />
+    <Compile Include="MySingletonClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MyDataStructures\MyDataStructures.csproj">
-      <Project>{28824dde-a972-4a57-a90d-9e6e7d7ad1ff}</Project>
-      <Name>MyDataStructures</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MyDesignPatterns\MyDesignPatterns.csproj">
-      <Project>{447f9413-c4ec-4fb9-8714-aca587b4f4d0}</Project>
-      <Name>MyDesignPatterns</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

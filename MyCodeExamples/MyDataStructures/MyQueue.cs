@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 /// <summary>
-/// This namespace contains my implementation of several data structures.
-/// This work was done as a preperation for work interviews.
+/// This name space contains my implementation of several data structures.
+/// This work was done as a preparation for work interviews.
 /// </summary>
 namespace MyDataStructures
 {
@@ -13,13 +13,13 @@ namespace MyDataStructures
     public class MyQueue<T> : IDisposable
     {
         #region Fields
-        // This list will implement the queue because essentialy they are the same.
+        // This list will implement the queue because essentially they are the same.
         private List<T> _queue;
         #endregion
 
         #region Constructor
         /// <summary>
-        /// Create new instance of a genric Queue of items.
+        /// Create new instance of a generic Queue of items.
         /// </summary>
         public MyQueue()
         {
