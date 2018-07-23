@@ -23,6 +23,13 @@ namespace MyCodeExamples
         public MainWindow()
         {
             InitializeComponent();
+            debugRoutine();
+        }
+
+        private void debugRoutine()
+        {
+            
+            
         }
     }
 }
